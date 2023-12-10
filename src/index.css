@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Raleway:wght@400;600;700;800&display=swap');
+
+.transparent{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    background: rgba(1, 3, 19, 0.5);
+    opacity: 100;
+}
+
+@keyframes tornado {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animation {
+    animation: tornado 2s linear infinite;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .tornado-animation:hover {
+    transform: scale(1.05) rotate(-10deg);
+  }
